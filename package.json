@@ -1,7 +1,7 @@
 {
   "name": "dialoguejs",
   "description": "A simple dialogue library for games",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "./lib/dialogue.js",
   "directories": {
     "lib": "./lib"
