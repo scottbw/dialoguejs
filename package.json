@@ -2,7 +2,8 @@
   "name": "dialoguejs",
   "description": "A simple dialogue library for games",
   "version": "0.1.0",
+  "main": "dialoguejs",
   "repository": {
-    "url": ""
+    "url": "https://github.com/scottbw/dialoguejs"
   }
 }
