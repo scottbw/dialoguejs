@@ -3,15 +3,29 @@ dialoguejs
 
 A simple branching dialogue and ask/tell engine for conversations in RPG-style games
 
+## Installing and using
 
-#Example
+Use NPM to install:
 
-Loading dialogue for a character
+    npm install dialoguejs
+    
+You can then create a dialogue object, holding all dialogue states, using:
 
-    var dialogue = require('dialoguejs');
-    dialogue.load("gnu", __dirname + "/gnu.txt");
+    var mydialogue = require('dialoguejs');
 
-### Interacting using ask/tell
+## Loading dialogue from a text file
+
+To load dialogue for a character, call
+
+    dialogue.load(actor, file)
+
+For example:
+
+    dialogue.load("gnu", "gnu.txt");
+
+... loads dialogue for "gnu" from "gnu.txt".
+
+## Interacting using ask/tell
 
 The format of the request is 
 
@@ -54,7 +68,7 @@ For example:
     
 Note that dialogue state is maintained for player-actor combinations, so if multiple players converse with a NPC, they can each have a different state within the conversation with that NPC.
 
-# Creating a script
+## Creating a script
 
 Dialogue scripts are simple text files. Each line of dialogue is on a separate line, and starts with an identifier. This must be a number for use in a branching dialogue, or can be a word if using ask/tell. (Both types can be combined in one dialogue file)
 
